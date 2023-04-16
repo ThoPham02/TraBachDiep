@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #aabc44;
+    --light-text-color: #eee;
+    --black-text-color: #444;
+}
+
+/* ==== Main Content CSS ==== */
+/* === Hero CSS === */
+#hero {
+    position: relative;
+    height: calc(100vh - 72.4px);
+}
+
+#hero .container {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+#hero .brand-name {
+    width: 100%;
+    text-transform: uppercase;
+}
+
+#hero .brand-name span {
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 2.4rem;
+    color: var(--primary-color);
+}
+
+#hero .brand-name h1 {
+    font-size: 5rem;
+}
+
+/* === Introduce Paragraph CSS === */
+#introduce-paragraph {
+    margin-top: 170px;
+}
+
+.paragraph-wrapper {
+    margin-top: 48px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+#footer {
+    margin-top: 80px;
+}

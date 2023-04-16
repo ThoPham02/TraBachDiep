@@ -1,0 +1,167 @@
+/* import Font: */
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+
+* {
+    transition: all ease 300ms;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    position: relative;
+    height: 100vh;
+    font-size: 1.6rem;
+    font-family: "Merriweather", serif;
+    color: var(--black-text-color);
+}
+
+:root {
+    --primary-color: #aabc44;
+    --light-text-color: #eee;
+    --black-text-color: #444;
+}
+
+#main-content {
+    margin-top: 66.4px;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+.content {
+    max-width: calc(1280px + 48px);
+    margin: auto;
+    padding: 0px 24px;
+}
+
+.sm-content {
+    width: calc(1068px + 48px);
+    margin: auto;
+    padding: 0px 24px;
+}
+
+button {
+    padding: 16px 48px;
+    color: var(--black-text-color);
+    background-color: var(--primary-color);
+    font-family: inherit;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 2px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    color: var(--light-text-color);
+}
+
+.title {
+    font-size: 3.2rem;
+    text-align: center;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.background {
+    position: absolute;
+    z-index: -999;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* === Navigation CSS === */
+.navigation {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    position: fixed;
+    width: 100%;
+    top: -6px;
+    z-index: 999;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+        rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.navigation .container,
+.navigation ul {
+    display: flex;
+    align-items: center;
+}
+
+.navigation .container {
+    justify-content: space-between;
+}
+
+.navigation ul {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    gap: 32px;
+    font-weight: 400;
+}
+
+.navigation ul a {
+    display: inline-block;
+    padding: 20px 24px;
+}
+
+.navigation ul a:hover {
+    color: #eee;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* === Footer CSS === */
+#footer {
+    position: relative;
+    margin-top: 170px;
+    background-repeat: no-repeat;
+    background-color: #f1f1e7;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+#footer .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding: 32px 0px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer h4 {
+    font-size: 2.4rem;
+}
+
+#footer .logo {
+    margin-bottom: 2px;
+}
+#footer h4 {
+    margin-bottom: 22px;
+}
+
+#footer .contact .social-media {
+    display: flex;
+    gap: 8px;
+    font-size: 2.8rem;
+}
+
+#footer .contact .social-media i {
+    color: var(--primary-color);
+}
+
+.footer-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /* z-index: -999; */
+}

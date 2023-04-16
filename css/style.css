@@ -1,0 +1,236 @@
+:root {
+    --primary-color: #aabc44;
+    --black-text-color: #444;
+    --light-text-color: #eee;
+}
+
+/* ==== Main Content CSS ==== */
+/* === Hero CSS === */
+#hero {
+    position: relative;
+    width: 100%;
+    height: 577px;
+    margin: 0;
+}
+
+#hero .container {
+    height: 100%;
+    padding-left: 86px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#hero h1.title {
+    font-size: 2.4rem;
+    margin-bottom: 18px;
+    align-self: self-start;
+}
+
+#hero img {
+    margin-bottom: 32px;
+}
+
+#hero p.desc {
+    width: 36%;
+    margin-bottom: 46px;
+    line-height: 1.7;
+}
+
+/* === Popular Products CSS === */
+
+#popular-product {
+    position: relative;
+    height: 748px;
+    margin-top: 100px;
+    padding-top: 100px;
+}
+
+#popular-product .title {
+    margin-bottom: 48px;
+}
+
+.slider {
+    overflow: hidden;
+}
+
+.product-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.product-item {
+    flex: 1 0 calc((100% - 3 * 32px) / 4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item img {
+    width: 268px;
+    height: auto;
+    margin-bottom: 28px;
+}
+
+.product-item .product-name {
+    text-transform: uppercase;
+}
+
+.next-btn,
+.prev-btn {
+    position: absolute;
+    top: 44%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.next-btn {
+    right: 48px;
+}
+
+.prev-btn {
+    left: 48px;
+}
+
+.product-lotus {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.product-tea-leaf {
+    position: absolute;
+    top: 4px;
+    right: 4px;
+}
+
+/* === Introduce CSS === */
+#introduce {
+    position: relative;
+    height: 832px;
+    margin-top: -208px;
+    padding-top: 120px;
+}
+
+#introduce .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+}
+
+#introduce .details {
+    margin-left: 86px;
+    flex: 1 0;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+#introduce .details .desc {
+    width: 44%;
+    margin-top: -24px;
+    margin-bottom: 32px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+}
+
+#introduce .phone-number {
+    position: absolute;
+    top: 287px;
+    right: 75px;
+    font-size: 2.4rem;
+}
+
+#introduce .phone-number a {
+    color: var(--primary-color);
+}
+#introduce .phone-number img {
+    position: absolute;
+    z-index: -998;
+    top: -26px;
+    left: -84px;
+}
+
+/* === Artist CSS === */
+#artist {
+    position: relative;
+    height: 864px;
+    padding-top: 120px;
+}
+
+#artist .title {
+    margin-bottom: 72px;
+}
+
+.artist-list {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+.artist-list .items {
+    padding: 0px 8px 20px;
+    border-radius: 20px;
+    flex: 1 0 calc((100% - 4 * 32px) / 5);
+    text-align: center;
+    background-color: #fff;
+}
+
+.artist-list .items:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    cursor: pointer;
+}
+
+.artist-list .items img {
+    margin-bottom: 16px;
+}
+
+.artist-list .items .artist-name {
+    margin-bottom: 14px;
+    font-size: 1.8rem;
+}
+
+.artist-list .items .artist-desc {
+    font-size: 1.2rem;
+    line-height: 1.3;
+}
+
+.background-artist {
+    z-index: -1000;
+}
+
+/* === Buy Now CSS === */
+#buy-now {
+    margin-top: -200px;
+    padding-top: 120px;
+}
+
+#buy-now .sm-content {
+    padding: 0;
+}
+
+#buy-now .title {
+    margin-bottom: 72px;
+}
+
+#buy-now form {
+    /* padding-bottom: 120px; */
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+#buy-now input {
+    width: 80%;
+    padding-left: 24px;
+    border: 4px solid var(--primary-color);
+    font-size: 1.6rem;
+}
+
+#buy-now button {
+    width: 20%;
+}
