@@ -1,12 +1,3 @@
-const filterType = document.querySelectorAll('input[name="filter-type"]');
-
-const typeValues = [];
-filterType.forEach((checkbox) => {
-  if (checkbox.checked) {
-    typeValues.push(checkbox.value);
-  }
-});
-
 const rangeInput = document.getElementById("rangeInput");
 const rangeValue = document.getElementById("rangeValue");
 var minPrice = 50;
@@ -16,14 +7,32 @@ rangeInput.addEventListener("input", function () {
   maxPrice = rangeInput.value;
 });
 
-const filterBrand = document.querySelectorAll('input[name="filter-type"]');
+const filterType = document.querySelectorAll('input[name="filter-type"]');
 
-const brandValues = [];
-filterBrand.forEach((checkbox) => {
-  if (checkbox.checked) {
-    brandValues.push(checkbox.value);
-  }
-});
+var typeFilter = [];
+var brandFilter = [];
+
+const getTypeValue = function () {
+  const typeValue = [];
+  filterType.forEach((checkbox) => {
+    if (checkbox.checked) {
+      typeValue.push(checkbox.value);
+    }
+  });
+  return typeValue;
+};
+
+const filterBrand = document.querySelectorAll('input[name="filter-brand"]');
+
+const getBrandValue = function () {
+  const brandValues = [];
+  filterBrand.forEach((checkbox) => {
+    if (checkbox.checked) {
+      brandValues.push(checkbox.value);
+    }
+  });
+  return brandValues;
+};
 
 const listProducts = [
   {
@@ -136,22 +145,6 @@ const listProducts = [
   },
 ];
 
-const filteredProducts = listProducts.filter((product) => {
-  if (typeValues.length > 0 && !typeValues.includes(product.name)) {
-    return false;
-  }
-
-  if (brandValues.length > 0 && !brandValues.includes(product.brand)) {
-    return false;
-  }
-
-  if (product.price < minPrice || product.price > maxPrice) {
-    return false;
-  }
-
-  return true;
-});
-
 function makeElem(coursesItem) {
   const { id, name, price, img_url, weight, brand, num } = coursesItem;
   let li = document.createElement("li");
@@ -208,7 +201,7 @@ function renderProduct(products) {
   list.append(listContainer);
 }
 
-renderProduct(filteredProducts);
+renderProduct(listProducts);
 
 const removeProduct = () => {
   var myDiv = document.getElementById("render-products");
@@ -219,34 +212,36 @@ const removeProduct = () => {
 
 const filter = () => {
   return listProducts.filter((product) => {
-    if (typeValues.length > 0 && !typeValues.includes(product.name)) {
+    if (typeFilter.length > 0 && !typeFilter.includes(product.name)) {
       return false;
     }
-  
-    if (brandValues.length > 0 && !brandValues.includes(product.brand)) {
+
+    if (brandFilter.length > 0 && !brandFilter.includes(product.brand)) {
       return false;
     }
-    
+
     if (product.price < minPrice || product.price > maxPrice) {
       return false;
     }
-  
+
     return true;
   });
-}
+};
 
-const reRender = function() {
-  removeProduct()
-  const filteredProducts = filter()
-  renderProduct(filteredProducts)
-}
+const reRender = function () {
+  removeProduct();
+  brandFilter = getBrandValue();
+  typeFilter = getTypeValue();
+  const filteredProducts = filter();
+  renderProduct(filteredProducts);
+};
 
-rangeInput.addEventListener("change", reRender)
+rangeInput.addEventListener("change", reRender);
 
-filterType.forEach(type => {
-  type.addEventListener("change", reRender)
-})
+filterType.forEach((type) => {
+  type.addEventListener("change", reRender);
+});
 
-filterBrand.forEach(brand => {
-  brand.addEventListener("change", reRender)
-})
+filterBrand.forEach((brand) => {
+  brand.addEventListener("change", reRender);
+});
