@@ -3,7 +3,10 @@
   --light-text-color: #eee;
   --black-text-color: #444;
 }
-
+.ul {
+  padding: 0;
+  margin: 0;
+}
 .product-head {
   display: flex;
   justify-content: center;

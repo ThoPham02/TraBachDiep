@@ -2,7 +2,14 @@
     margin-top:146.4px;
 }
 
-
+.breadcrumb > a {
+  color: #888;
+}
+.breadcrumb {
+  color: #888;
+  margin: 0 10% 0 10%;
+  padding-top: 5%;
+}
 .container1 {
     display: flex;
     flex-direction: column;
@@ -76,4 +83,127 @@
     width: 100%;
     padding: 0 10% 0 10%;
   }
+  .info {
+    padding-left: 5%;
+  }
+/*Floor 1*/
+  .floor1 {
+    font-size: 40px;
+    font-weight: 0;
+    
+  }
+/*Floor 2*/
+  .stars, .evaluate {
+    display: inline-block;
+  }
+  .evaluate {
+    color: #888;
+  }
 
+  .stars {
+      color: var(--primary-color);
+  }
+
+/*Floor 3*/
+  .price, .currency, .type {
+    display: inline-block;
+  }
+  .type > i,.weight {
+    display: inline-block;
+  }
+  .price {
+    font-size: 40px;
+  }
+  .type {
+    color: #888;
+    padding-left: 15%;
+  }
+
+/*Floor 4*/
+  .floor4 > .heading {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+
+  .info-floor {
+    padding: 3% 15% 3% 0;
+  }
+
+  .info-down {
+    padding-right: 5%;
+  }
+  .context {
+    padding: 3% 0 3% 0;
+  }
+
+
+
+  .component2 {
+    background-image: url(../Pictures/chitietsanpham/bg-chitiet.jpg) ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+
+  .instructions {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10%;
+  }
+  .left-instructions {
+    padding: 0 5% 0 15%;
+
+  }
+  .up {
+    font-size: 40px;
+    padding-bottom: 5%;
+  }
+
+  .down {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .ins-pd {
+    padding: 5% 0 5% 0;
+  }
+  
+  .instruction-context1 {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .instruction-context1 i {
+    margin-right: 5px;
+  }
+
+  .instruction-context2 {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .instruction-context2 i {
+    margin-right: 5px;
+  }
+
+  .instruction-context3 {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+  }
+  
+  .instruction-context3 i {
+    margin-right: 5px;
+  }
+  
+  .ic {
+    width: 40px;
+    height: 40px;
+    font-size: 40px;
+    padding-right: 5px;
+    color: ;
+  }
