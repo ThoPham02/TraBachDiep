@@ -181,6 +181,8 @@
 }
 
 .artist-list .items:hover {
+    transform: translateX(4px) translateY(4px);
+    transition: 0.5s;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
 }
@@ -233,4 +235,14 @@
 
 #buy-now button {
     width: 20%;
+}
+
+.move {
+    transform: translateX(-400px);
+    transition: 0s;
+}
+
+.move-in {
+    transform: translateX(0);
+    transition: 2s;
 }
