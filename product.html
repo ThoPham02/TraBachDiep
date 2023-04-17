@@ -6,14 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- link Reset CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
-    <!-- link font awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
     <!-- link bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
@@ -26,6 +18,19 @@
       integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
       crossorigin="anonymous"
     ></script>
+    <!-- link font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- google icon -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
     <!-- link Utilities CSS -->
     <link rel="stylesheet" href="./css/utilities.css" />
     <!-- link Product CSS -->
@@ -87,71 +92,129 @@
             <!-- profuct filter -->
             <h4>Bộ lọc sản phẩm</h4>
             <div class="row">
-                <div class="col-3 product-filter">
-                    <div class="filter-type">
-                      <h5 class="filter-head">Loại sản phẩm</h5>
-                      <form>
-                          <input type="checkbox" name="filter-type" value="Trà xanh Thái Nguyên">Trà xanh Thái Nguyên <br>
-                          <input type="checkbox" name="filter-type" value="Trà Ô Long">Trà Ô Long <br>
-                          <input type="checkbox" name="filter-type" value="Trà Shan Tuyết">Trà Shan Tuyết <br>
-                          <input type="checkbox" name="filter-type" value="Trà Sen">Trà Sen <br>
-                          <input type="checkbox" name="filter-type" value="Trà lài">Trà lài <br>
-                          <input type="checkbox" name="filter-type" value="Trà thảo dược">Trà thảo dược <br>
-                          <input type="checkbox" name="filter-type" value="Dụng cụ pha trà">Dụng cụ pha trà <br>
-                          <input type="checkbox" name="filter-type" value="Nước pha trà">Nước pha trà <br>
-                      </form>
-                    </div>
-                    <div class="filter-price">
-                      <h5 class="filter-head">Giá thành</h5>
-                      <form >
-                          <input type="range" name="filter-price" min="50" max="1000" id="rangeInput"><br>
-                          <p id="rangeValue">Từ 50.000đ đến 200.000đ</p>
-                      </form>
-                    </div>
-                    <div class="filter-brand">
-                      <h5 class="filter-head">Thương hiệu</h5>
-                      <form>
-                          <input type="checkbox" name="filter-brand" value="Trà Tân Cương Xanh">Trà Tân Cương Xanh <br>
-                          <input type="checkbox" name="filter-brand" value="Trà Sen Tây Hồ">Trà Sen Tây Hồ <br>
-                          <input type="checkbox" name="filter-brand" value="Trà Lộc Tân">Trà Lộc Tân <br>
-                      </form>
-                    </div>
+              <div class="col-3 product-filter">
+                <div class="filter-type">
+                  <h5 class="filter-head">Loại sản phẩm</h5>
+                  <form>
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà xanh Thái Nguyên"
+                    /><span>Trà xanh Thái Nguyên</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà Ô Long"
+                    /><span>Trà Ô Long</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà Shan Tuyết"
+                    /><span>Trà Shan Tuyết</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà Sen"
+                    /><span>Trà Sen</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà lài"
+                    /><span>Trà lài</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Trà thảo dược"
+                    /><span>Trà thảo dược</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Dụng cụ pha trà"
+                    /><span>Dụng cụ pha trà</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-type"
+                      value="Nước pha trà"
+                    /><span>Nước pha trà</span> <br />
+                  </form>
+                </div>
+                <div class="filter-price">
+                  <h5 class="filter-head">Giá thành</h5>
+                  <form>
+                    <input
+                      type="range"
+                      name="filter-price"
+                      min="50"
+                      max="1000"
+                      id="rangeInput"
+                      value="200"
+                    /><br />
+                    <p id="rangeValue">Từ 50.000đ đến 200.000đ</p>
+                  </form>
+                </div>
+                <div class="filter-brand">
+                  <h5 class="filter-head">Thương hiệu</h5>
+                  <form>
+                    <input
+                      type="checkbox"
+                      name="filter-brand"
+                      value="Trà Tân Cương Xanh"
+                    /><span>Trà Tân Cương Xanh</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-brand"
+                      value="Trà Sen Tây Hồ"
+                    /><span>Trà Sen Tây Hồ</span> <br />
+                    <input
+                      type="checkbox"
+                      name="filter-brand"
+                      value="Trà Lộc Tân"
+                    /><span>Trà Lộc Tân</span> <br />
+                  </form>
+                </div>
+              </div>
+              <div class="col-9">
+                <div id="render-products"></div>
+                <!-- choose page -->
+                <div class="choose-page">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    class="btn-prev btn"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M7.72 12.53a.75.75 0 010-1.06l7.5-7.5a.75.75 0 111.06 1.06L9.31 12l6.97 6.97a.75.75 0 11-1.06 1.06l-7.5-7.5z"
+                      clip-rule="evenodd"
+                    />
+                  </svg>
+                  <div class="pages-list">
+                    <div class="page highlight">1</div>
+                    <div class="page">2</div>
+                    <div class="page">3</div>
+                    <div class="page">4</div>
+                    <div class="page-more">...</div>
                   </div>
-                  <div class="col-9">
-                      <div id="list-products">
-                        <div class="product-item">
-                            <div class="item-header">
-                                <div class="item-evaluate">
-                                    <i class="fas fa-star" style="color: var(--primary-color);"></i>
-                                    <i class="fas fa-star" style="color: var(--primary-color);"></i>
-                                    <i class="fas fa-star" style="color: var(--primary-color);"></i>
-                                    <i class="fas fa-star" style="color: var(--primary-color);"></i>
-                                    <i class="fas fa-star" style="color: var(--primary-color);"></i>
-                                    <span>(17)</span>
-                                </div>
-
-                                <div class="item-new">
-                                    New
-                                </div>
-                            </div>
-
-                            <div class="item-content">
-                                <img src="./Pictures/tin-tuc/TINTUC_01.jpg" alt="...">
-                                <div class="item-name">Trà Shan Tuyết</div>
-                                <div class="item-info">
-                                    <div class="item-price">50,000VNĐ</div>
-                                    <div class="item-price">
-                                        200g
-                                        <i class="fa-regular fa-circle-chevron-down"></i>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      </div>
-                  </div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="btn-next btn"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.25 4.5l7.5 7.5-7.5 7.5"
+                    />
+                  </svg>
                 </div>
               </div>
             </div>
+          </div>
+        </div>
       </section>
 
       <!-- footer -->
@@ -216,5 +279,6 @@
 
     <!-- link javascript -->
     <script src="./js/product.js"></script>
+    <script src="./js/tintuc.js"></script>
   </body>
 </html>
