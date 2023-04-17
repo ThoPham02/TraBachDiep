@@ -32,6 +32,8 @@
 #news .items:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     cursor: pointer;
+    transform: translateX(4px) translateY(4px);
+    transition: 0.5s;
 }
 
 #news .items img {
