@@ -1,0 +1,79 @@
+#ingredients {
+    margin-top:146.4px;
+}
+
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin:0;
+  }
+  
+  .slider1 {
+    height: 450px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top:34px;
+  }
+  
+  .product-list1 {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 225px;
+    padding: 0;
+    height: 100%; /* thiết lập chiều cao của slider */
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(0); /* sử dụng translateX(0) để reset vị trí ban đầu */
+  }
+  
+  .product-item1 {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-image1 {
+    width: 150px;
+    height: 150px;
+  }
+  
+  
+  .up-btn {
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+  
+  .down-btn {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    transform: rotate(90deg);
+  }
+  
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 518px;
+  }
+  
+  #ingredients{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 10% 0 10%;
+  }
+

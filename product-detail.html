@@ -1,73 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- link Reset CSS -->
-        <link rel="stylesheet" href="./css/reset.css" />
-        <!-- link font awesome -->
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-            crossorigin="anonymous"
-            referrerpolicy="no-referrer"
-        />
-        <!-- link Utilities CSS -->
-        <link rel="stylesheet" href="./css/utilities.css" />
-        <!-- link Trang Chủ CSS -->
-        <link rel="stylesheet" href="./css/style.css" />
-        <title>Trà Sen Bách Diệp</title>
-    </head>
-    <body>
-        <!-- Navigation -->
-        <nav class="navigation">
-            <div class="container content">
-                <a href="index.html">
-                    <img
-                        src="./Pictures/trang-chu/logophongtra.png"
-                        alt="Trà Bách Diệp logo"
-                        class="logo"
-                    />
-                </a>
 
-                <ul>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="introduction.html">Giới Thiệu</a></li>
-                    <li><a href="product.html">sản phẩm</a></li>
-                    <li><a href="news.html">tin tức</a></li>
-                    <li><a href="contact.html">liên hệ</a></li>
-                </ul>
-            </div>
-        </nav>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link Reset CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
 
-        <!-- Main Content -->
-        <main id="main-content">
-            <!-- header -->
-            <header id="hero">
-                <div class="container content">
-                    <h1 class="title">Trà ướp sen tây hồ</h1>
-                    <img
-                        src="./Pictures/trang-chu/tinhhoaamthuc.png"
-                        alt="Tinh hoa ẩm thực"
-                    />
+    <!-- link font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link Utilities CSS -->
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <!-- link Trang Chủ CSS -->
+    <link rel="stylesheet" href="./css/product-detail.css" />
+    <title>Trà Sen Bách Diệp</title>
+</head>
 
-                    <p class="desc">
-                        Sự hòa quyện tuyệt vời giữa hương thơm ngan ngát của sen
-                        Bách Diệp Hồ Tây và vị đậm đà của trà Tân Cương
-                    </p>
-                    <button>Thử Ngay</button>
+<body>
+    <!-- Navigation -->
+    <nav class="navigation">
+        <div class="container content">
+            <a href="index.html">
+                <img src="./Pictures/trang-chu/logophongtra.png" alt="Trà Bách Diệp logo" class="logo" />
+            </a>
+
+            <ul>
+                <li><a href="index.html">Trang chủ</a></li>
+                <li><a href="introduction.html">Giới Thiệu</a></li>
+                <li><a href="product.html">sản phẩm</a></li>
+                <li><a href="news.html">tin tức</a></li>
+                <li><a href="contact.html">liên hệ</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- background -->
+        <img src="./Pictures/bai-viet/background.jpg" alt="..." class="background-hero background" />
+        </header>
+
+        <!-- content -->
+        <!--#1 component-->
+        <section id="ingredients">
+            <!-- slider -->
+            <div class="container content container1">
+                <div class="wrapper">
+                    <!-- up-btn -->
+                    <img src="./Pictures/trang-chu/nextButton.png" alt="" class="up-btn" />
+                    <div class="slider1">
+                        <div class="product-list1">
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-1.jpg" alt="product" class="product-image1" />
+                            </div>
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-2.jpg" alt="product" class="product-image1" />
+                            </div>
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-3.jpg" alt="product" class="product-image1" />
+                            </div>
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-1.jpg" alt="product" class="product-image1" />
+                            </div>
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-2.jpg" alt="product" class="product-image1" />
+                            </div>
+                            <div class="product-item1">
+                                <img src="./Pictures/chitietsanpham/img-3.jpg" alt="product" class="product-image1" />
+                            </div>
+                        </div>
+                    </div>
+                    <!-- down btn -->
+                    <img src="./Pictures/trang-chu/backButton.png" alt="" class="down-btn" />
                 </div>
-                <!-- background -->
-                <img
-                    src="./Pictures/trang-chu/backBanner.png"
-                    alt="..."
-                    class="background-hero background"
-                />
-            </header>
+            </div>
+            <!-- img1 -->
+            <img src="./Pictures/chitietsanpham/main.jpg" alt="description_of_your_image">
+            <div class="info">
+                <div class="info-up">
+                    <div calss="floor1">Trà Shan Tuyết</div>
+                    <div calss="floor2">
+                        <div class="stars">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+                    </div>
+                    <div calss="floor3"></div>
+                    <div calss="floor4"></div>
+                </div>
+                <div class="info-down"></div>
+            </div>
+        </section>
 
-           
+        <!-- background -->
+       
+        </section>
+
             <!-- footer -->
             <footer id="footer">
                 <div class="container sm-content">
@@ -132,9 +167,10 @@
                     class="footer-image"
                 />
             </footer>
-        </main>
+    </main>
 
-        <!-- link javascript -->
-        <script src="./js/index.js"></script>
-    </body>
+    <!-- link javascript -->
+    <script src="./js/product-detail.js"></script>
+</body>
+
 </html>
