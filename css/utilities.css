@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
 
 * {
-    transition: all ease 300ms;
+    /* transition: all ease 100ms; */
     box-sizing: border-box;
     user-select: none;
 }
